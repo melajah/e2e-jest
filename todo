@@ -1,0 +1,33 @@
+1. linkedIn
+2. Github
+  - User
+    https://api.github.com/users/dzakki
+  - Repo
+    https://api.github.com/users/dzakki/repos
+  - 
+
+3. Aku butuh tempat untuk menyimpan resolved bug/link history resolve my error code.
+   nama aplikasi adalah book resolve my code
+
+    Users
+      - name (text)
+      - email (text)
+      - password (text)
+
+    Books
+      - title (text)
+      - resolved (text)
+      - link_resolved (text)
+      - level [easy, medium, hard] (enum)
+      - status [doing, done] (enum)
+      - start_resolve (Date)
+      - done_resolve (Date) 
+      - UserId
+
+    BookTags
+      - bookId
+      - tagId
+
+    Tags (Optional) (pake seeder)
+      - name (text)
+      

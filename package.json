@@ -1,0 +1,22 @@
+{
+  "name": "livecode-debug",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon app.js",
+    "generate": "NODE_ENV=test sequelize db:create && NODE_ENV=test sequelize db:migrate",
+    "test": "NODE_ENV=test jest  --runInBand --detectOpenHandles  --forceExit"
+  },
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^7.18.2",
+    "sequelize": "^5.21.5"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "supertest": "^4.0.2"
+  }
+}
